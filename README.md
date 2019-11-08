@@ -2,7 +2,7 @@
 A Chai plugin to solve [Issue #1506: How can I test for an ordered subset with gaps between the elements?](https://github.com/chaijs/chai/issues/1056).
 
 ## Installing
-`npm install --save-dev chai-include-ordered-with-gaps`.
+`npm install --save-dev chai-include-ordered-with-gaps`
 
 ## Using
 
