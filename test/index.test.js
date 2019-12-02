@@ -38,7 +38,7 @@ describe('BDD-style', () => {
 });
 
 describe('TDD-style', () => {
-  describe('members.with.gaps', () => {
+  describe('include ordered members with gaps', () => {
     it('should match even if not at the beginning', () => {
       assert.includeOrderedMembersWithGaps([0, 1, 2, 3], [1, 2, 3]);
     });
