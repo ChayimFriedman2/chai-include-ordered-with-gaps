@@ -1,5 +1,3 @@
-/// <reference path="../lib/index.d.ts" />
-
 'use strict';
 
 const { expect, should, assert, use } = require('chai');
@@ -35,6 +33,30 @@ describe('BDD-style', () => {
       it("should honor 'deep'", () => {
         expect([{ a: 1 }, { b: 2 }, { c: 3 }, { d: 4 }]).to.include.deep.ordered.members.with.gaps([{ a: 1 }, { c: 3 }]);
       });
+    });
+  });
+});
+
+describe('TDD-style', () => {
+  describe('members.with.gaps', () => {
+    it('should match even if not at the beginning', () => {
+      assert.includeMembersWithGaps([0, 1, 2, 3], [1, 2, 3]);
+    });
+
+    it('should match even with gaps', () => {
+      assert.includeMembersWithGaps([1, 2, 3], [1, 3]);
+    });
+
+    it('should not match if missing elements', () => {
+      assert.notIncludeMembersWithGaps([1, 3], [1, 2, 3]);
+    });
+
+    it('should not match if elements are not ordered', () => {
+      assert.notIncludeMembersWithGaps([2, 1, 3], [1, 2, 3]);
+    });
+
+    it('includeDeepOrderedMembersWithGaps', () => {
+      assert.includeDeepOrderedMembersWithGaps([{ a: 1 }, { b: 2 }, { c: 3 }, { d: 4 }], [{ a: 1 }, { c: 3 }]);
     });
   });
 });
