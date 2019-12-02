@@ -25,5 +25,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.2"
+  },
+  "peerDependencies": {
+    "chai": "^4.2.0"
   }
 }
