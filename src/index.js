@@ -9,7 +9,9 @@ module.exports = function(chai, utils) {
 
   Assertion.overwriteChainableMethod(
     'members',
-    function(_super) {},
+    function(_super) {
+      return _super;
+    },
     function(_super) {},
   );
 };
