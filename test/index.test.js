@@ -40,19 +40,19 @@ describe('BDD-style', () => {
 describe('TDD-style', () => {
   describe('members.with.gaps', () => {
     it('should match even if not at the beginning', () => {
-      assert.includeMembersWithGaps([0, 1, 2, 3], [1, 2, 3]);
+      assert.includeOrderedMembersWithGaps([0, 1, 2, 3], [1, 2, 3]);
     });
 
     it('should match even with gaps', () => {
-      assert.includeMembersWithGaps([1, 2, 3], [1, 3]);
+      assert.includeOrderedMembersWithGaps([1, 2, 3], [1, 3]);
     });
 
     it('should not match if missing elements', () => {
-      assert.notIncludeMembersWithGaps([1, 3], [1, 2, 3]);
+      assert.notIncludeOrderedMembersWithGaps([1, 3], [1, 2, 3]);
     });
 
     it('should not match if elements are not ordered', () => {
-      assert.notIncludeMembersWithGaps([2, 1, 3], [1, 2, 3]);
+      assert.notIncludeOrderedMembersWithGaps([2, 1, 3], [1, 2, 3]);
     });
 
     it('includeDeepOrderedMembersWithGaps', () => {
