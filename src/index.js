@@ -7,10 +7,12 @@
 module.exports = function(chai, utils) {
   const { Assertion, assert, AssertionError } = chai;
 
-  Assertion.overwriteChainableMethod(
+  const originalMembers = Assertion.prototype.members;
+
+  Assertion.addChainableMethod(
     'members',
-    function(_super) {
-      return _super;
+    function() {
+      originalMembers.apply(this, arguments);
     },
     function(_super) {},
   );
