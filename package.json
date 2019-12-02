@@ -16,6 +16,7 @@
     "arrays",
     "gaps"
   ],
+  "types": "./typings.d.ts",
   "author": "Chayim Refael Friedman <chayimfr@gmail.com>",
   "license": "MIT",
   "bugs": {
