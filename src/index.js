@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @param {Chai} chai
+ * @param {import('chai')} chai
  * @param {Chai.ChaiUtils} utils
  */
 module.exports = function(chai, utils) {
