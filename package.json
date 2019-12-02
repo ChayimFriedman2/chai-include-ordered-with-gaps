@@ -1,0 +1,25 @@
+{
+  "name": "chai-include-ordered-with-gaps",
+  "version": "1.0.0",
+  "description": "A Chai plugin to check if an array contains some members, not necessarily successively.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChayimFriedman2/chai-include-ordered-with-gaps.git"
+  },
+  "keywords": [
+    "chai",
+    "chai-plugin",
+    "arrays",
+    "gaps"
+  ],
+  "author": "Chayim Refael Friedman <chayimfr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChayimFriedman2/chai-include-ordered-with-gaps/issues"
+  },
+  "homepage": "https://github.com/ChayimFriedman2/chai-include-ordered-with-gaps#readme"
+}
