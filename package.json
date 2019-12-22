@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ChayimFriedman2/chai-include-ordered-with-gaps#readme",
   "devDependencies": {
+    "@types/chai": "^4.2.7",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1"
